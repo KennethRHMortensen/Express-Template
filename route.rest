@@ -1,0 +1,29 @@
+GET http://localhost:3000/countries
+
+### 
+GET http://localhost:3000/countries/620b8faff28f57dfa1d80756
+
+###
+
+DELETE http://localhost:3000/countries/620b9967f3ff90817c6006bc
+###
+
+POST http://localhost:3000/countries
+Content-Type: application/json
+
+{
+    "name": "spanien",
+    "continent": "Europe",
+    "countrycode": "ESP",
+    "population": 47350000
+}
+
+###
+
+PATCH http://localhost:3000/countries/620b9967f3ff90817c6006bc/
+Content-Type: application/json
+
+{
+    "continent": "Europe"
+}
+
